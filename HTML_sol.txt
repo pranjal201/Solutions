@@ -1,0 +1,11 @@
+# Basic Heirarchy for an HTML page
+    <html>
+    └── <head>
+    └── <body>
+        └── <header>
+        └── <nav>
+        └── <main>
+            └── <section>
+            └── <article>
+        └── <aside>
+        └── <footer>
