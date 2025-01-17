@@ -1,5 +1,0 @@
-This is regarding the nvim problems faced 
-
-[DURING A FRESH INSTALL OF NEO VIM IN UBUNTU]
-    * Add the ppa:package to ubuntu repository. => sudo add-apt-repository ppa:neovim-ppa/stable
-    * Run the command => sudo apt update & install neovim [ this makes sure we install the latest stable releasee of the neovim]
