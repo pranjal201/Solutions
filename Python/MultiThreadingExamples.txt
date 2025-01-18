@@ -1,0 +1,66 @@
+**This Is about Multithreading in Python**
+2. Understanding Processes vs. Threads
+	•	Process: A separate instance of a running program with its own memory space.
+        	* Isolated > Each Process runs in an isolation from each other.  Has its own memory space
+        	 which is not shared with any other process.
+        	* Resource Ownership > Every process own the resources that it requries, file handling, network connection and memory.
+        	* Independent Execution > Every process is indepentent of one another
+        	* Communication > As many process needs to communicate with one another , they use IPC (Inter Process Communication)
+         through Pipes, Shared Memory, Message Queue, Sockets
+        
+        Lifecycle of a Process:
+            1. Creation 
+            2. Execution
+            3. Termination
+
+            even python run.py \\ forks out a new process for execution
+
+	•	Thread: A smaller unit of execution within a process that shares the process’s memory space.
+        	* Shared Memory: All threads share a single memory space and resources including variables,file handles and heap
+        	* Lightweight : Threads are light in terms of resource usage as compared to process
+        	* Faster Communication : Thread share the same memory space , hence can communicate with one another faster.
+        	* Parallelism : Multiple threads can run in parallel
+
+	•	Differences in memory management, communication, and resource sharing. 
+3. Concepts of Parallelism and Concurrency
+	•	Parallelism: Executing multiple tasks simultaneously (e.g., on a multi-core processor).
+	•	Concurrency: Managing multiple tasks at the same time, but not necessarily running them simultaneously.
+	•	Importance of CPU-bound vs. I/O-bound tasks and when to use threads.
+
+4. Thread Lifecycle and Management
+	•	Thread States: Creation, execution, waiting, and termination.
+			When working with multiple threads, make sures, to wait for all the threads to finish.
+			If not done so, the main func will finish executing while the threads still execute.
+	•	Thread Scheduling: How the operating system decides which thread to run.
+	•	Thread Creation: Using threading libraries like threading or concurrent.futures in Python.
+5. Shared Data and Synchronization
+	•	Race Conditions: When multiple threads access shared data simultaneously, leading to unpredictable results.
+	•	Critical Sections: Parts of code that must be executed by one thread at a time.
+	•	Locks and Mutexes:
+	•	Tools to prevent race conditions by allowing only one thread to access a critical section at a time.
+	•	Example: threading.Lock in Python.
+	•	Semaphores:
+	•	Used to control access to a shared resource pool.
+	•	Example: threading.Semaphore in Python.
+	•	Deadlocks:
+	•	A situation where two or more threads are waiting for each other indefinitely.
+6. Thread Communication
+	•	Condition Variables: Allow threads to wait for specific conditions before proceeding.
+	•	Thread-Safe Queues: For safely passing data between threads.
+	•	Example: queue.Queue in Python.
+7. Global Interpreter Lock (GIL) in Python (Specific to Python)
+	•	Understand the limitations of threading in Python due to the GIL, which allows only one thread to execute Python bytecode at a time.
+	*This is one hell of a bottle neck. As in case of threads, it only sees it as a single core CPU. if you have say 12 threads, they will be executing concurrently.
+	•	Consider alternatives like multiprocessing for CPU-bound tasks.
+8. Performance and Debugging
+	•	Context Switching: The overhead of switching between threads and its impact on performance.
+	•	Thread Pools: Managing a pool of threads to limit thread creation overhead.
+	•	Example: ThreadPoolExecutor in Python.
+	•	Debugging Threads:
+	•	Challenges in identifying issues like race conditions or deadlocks.
+	•	Tools like logs and debuggers.
+9. Asynchronous Programming (Optional but Related)
+	•	While not directly multithreading, understanding asyncio can help if you’re handling I/O-bound tasks in Python.
+10. Operating System Basics
+	•	Scheduling: How operating systems manage threads.
+	•	Resource Limits: Memory and CPU usage limits imposed by the OS.

@@ -1,0 +1,2 @@
+grepWin => Kind of a fuzzy finder for windows
+WinMerge => Helps to compare 2 branches to find the delta b/w them.

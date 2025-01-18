@@ -1,0 +1,3 @@
+## this commands actually virtaual memory regions allocatied to a process
+#Need to know more about this command
+vmmap <PID>
