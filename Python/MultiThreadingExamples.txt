@@ -15,7 +15,9 @@
 
             even python run.py \\ forks out a new process for execution
 
+
 	•	Thread: A smaller unit of execution within a process that shares the process’s memory space.
+            * Threads also have the same process ID as that of their parent process.
         	* Shared Memory: All threads share a single memory space and resources including variables,file handles and heap
         	* Lightweight : Threads are light in terms of resource usage as compared to process
         	* Faster Communication : Thread share the same memory space , hence can communicate with one another faster.
