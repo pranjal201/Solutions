@@ -1,0 +1,13 @@
+Types in Golang
+
+>String
+>bool
+>Integer : uint8, uint64,int8, int64,uintptr
+>Floating: float32, float64
+>Complex
+
+>>Array
+>>Slices
+>>Maps
+>>Structs
+>>Pointers

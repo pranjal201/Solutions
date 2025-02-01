@@ -1,0 +1,2 @@
+1. to list the number of docker process running 
+    docker ps
