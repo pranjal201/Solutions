@@ -1,0 +1,11 @@
+# About the Architecture of LLAMA Model.
+>LLMs => Group of Neural Network, working on solving problems sequentially
+
+>> Backpropagation is a methods of finding the correct parameters for the model.
+    >> One of the method is "gradient descent"
+    >> Ex > Eq. of line is, y = mx +c , consider f(x) | y  a function / LLM model. so m & c are the parameters of the 
+        function f(x) | y. Here "x" can be compared  to user input. Depending upon the value of parameters will tell how         better your model is trained. 
+
+>> Transormer >> Building blocks of LLMs
+
+# Maths Involved

@@ -1,0 +1,6 @@
+editpcap -c 1000 input.pcap output.pcap
+??To split the pcap files
+
+
+** this convers pcap to json
+tshark -r input.pcap -T json >output.json
