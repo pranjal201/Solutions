@@ -1,0 +1,3 @@
+duckdb <db_name> // to make it persistent
+
+use rill start to create a custom dashboard from the data loaded

@@ -1,0 +1,32 @@
+## Debugging Python | 23 Geb 2025
+
+help -> to list out all the commands by pdb
+
+where -> gives a stack trace which tell where we are in the code
+
+n -> go to next
+
+s -> step into
+
+b -> set breakpoint
+
+ll -> LongListing, gives the 11 lines of the code
+
+a -> to list the arguments passed to the function
+
+
+c -> continue , unless another breakpoint is found
+r -> to retrun form the function
+
+until (line number) -> continues execution till the given line number
+
+disable/enable (breakpoint number) -> toggle the breakpoint
+
+
+vs code = launch.json
+
+
+//debugpy -> debugging server for python by microsoft
+can be used to debug remote server directly from local
+
+//pydevd (by JetBrains for above usecase)
