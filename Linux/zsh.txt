@@ -1,2 +1,0 @@
-In case you delete or corrupt the PATH variable
-PATH=/bin:/usr/bin:/usr/local/bin:/sbin:${PATH}
