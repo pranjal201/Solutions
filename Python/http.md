@@ -1,0 +1,21 @@
+
+1.  ### Starting a mini http server using python
+
+
+    >Lets say you have a folder on the server / Documents / mapped_catalogue.txt. 
+    Now you want to share this file or download it.
+    host the over directory using the python http server
+     Command : 
+
+```bash 
+    python -m http.server 8002 
+```
+ 
+ ( any port that is not being used)
+
+
+To download the file on your local system use curl or wget
+
+```bash 
+    wget http://103.102.234.122:8002/<fileName>
+```

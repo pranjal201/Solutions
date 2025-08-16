@@ -1,4 +1,6 @@
 # Solutions
 Software Related Solutions
-
-[Linux](./Linux/linux.md)
+- ## L
+    - >[Linux](./Linux/linux.md)
+- ## P
+    - >[Python](./Linux/python.md)

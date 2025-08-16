@@ -1,0 +1,11 @@
+
+1. ###  Installation For Pyenv starts
+    >https://github.com/pyenv/pyenv?tab=readme-ov-file#homebrew-in-macos
+
+2.  ### Setting up Pyenv virtual env 
+    >1. brew install pyenv-virtualenv
+    >2. eval "$(pyenv init -)"
+    eval "$(pyenv virtualenv-init -)"
+    >3. To create the virtual env use
+        pyenv virtualenv "python version" "name of venv'
+    >4. pyenv activate "name of venv" to activate the virtual env

@@ -1,4 +1,5 @@
-@@ Seeing 2 processes for python django
---> python manage.py runserver >>> you get 2 process in the ps -eaf | grep manage.py
+- ## Seeing 2 processes for python django
+
+> python manage.py runserver >>> you get 2 process in the ps -eaf | grep manage.py
 -- this is because , django spawns up 2 process , one to handle the server and other to check for hot file  reload.
 -- To stop this you can do, python manage.py runserver --noreload , this will only result in single process
