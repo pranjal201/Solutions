@@ -27,4 +27,4 @@ TLD stands for Top Level Domain Server. In our case it points to the TLD of .com
 4. When TLD gets the request, it also does not know of the IP of the google.com. So it points to the final server **Authoritative Name Server**.
 
 
-[DNS Records](./dnsrecord.md)
+[DNS Records](./dnsrecords.md)
